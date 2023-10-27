@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Player_Sound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-Lq-jwa">
+                                <rect key="frame" x="47.666666666666657" y="364" width="298" height="124"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ohn-08-EW8">
+                                        <rect key="frame" x="-2" y="0.0" width="302" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.77840623032334388" green="0.41141135666520429" blue="0.96611279249191284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="maximumTrackTintColor" red="0.12570948970712742" green="0.15196008957607229" blue="0.91976243257522583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="thumbTintColor" red="0.71593357600757768" green="0.53616323998783644" blue="0.94328004121780396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="controlVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="ePT-lh-U6z"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NEa-wu-FDh">
+                                        <rect key="frame" x="0.0" y="48" width="298" height="76"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hh-2h-h0o">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="76"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                                <connections>
+                                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44x-G8-7EM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xG-8U-74G">
+                                                <rect key="frame" x="101" y="0.0" width="96" height="76"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="pause"/>
+                                                <connections>
+                                                    <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8rY-Bd-kVF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-S8-lwt">
+                                                <rect key="frame" x="202" y="0.0" width="96" height="76"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="stop"/>
+                                                <connections>
+                                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mtq-I3-rKs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HiD-Lq-jwa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SK9-C7-2UG"/>
+                            <constraint firstItem="HiD-Lq-jwa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ysf-q9-J2b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderVolume" destination="Ohn-08-EW8" id="yci-U2-J3v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="72" height="62"/>
+        <image name="play" width="72" height="62"/>
+        <image name="stop" width="72" height="62"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

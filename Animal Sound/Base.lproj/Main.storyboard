@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animal_Sound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-fQ-4OF">
+                                <rect key="frame" x="10" y="94" width="373" height="689"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nvP-Qp-1z1">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="107"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rlb-7i-9Gr">
+                                        <rect key="frame" x="0.0" y="106.99999999999999" width="373" height="172.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlt-W4-ZZE">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="172.66666666666666"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="cao"/>
+                                                <connections>
+                                                    <action selector="dogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZP0-PE-d31"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHl-xN-1r7">
+                                                <rect key="frame" x="183" y="0.0" width="190" height="172.66666666666666"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="gato"/>
+                                                <connections>
+                                                    <action selector="catButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfu-c5-lNF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1HA-X9-Xrj">
+                                        <rect key="frame" x="0.0" y="279.66666666666669" width="373" height="171.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZV-db-aLz">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="171.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="leao"/>
+                                                <connections>
+                                                    <action selector="lionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3c-pW-EPi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGq-bf-t7d">
+                                                <rect key="frame" x="183" y="0.0" width="190" height="171.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ovelha"/>
+                                                <connections>
+                                                    <action selector="sheepButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9X-nW-ivZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="I5k-hW-aSa">
+                                        <rect key="frame" x="0.0" y="450.99999999999994" width="373" height="193.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-Ty-O4C">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="193.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="vaca"/>
+                                                <connections>
+                                                    <action selector="cowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ke-3u-L1M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR3-4b-BXu">
+                                                <rect key="frame" x="190" y="0.0" width="183" height="193.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="macaco"/>
+                                                <connections>
+                                                    <action selector="monkeyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXV-9x-9wB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gnd-Ug-zo4">
+                                        <rect key="frame" x="-2" y="644.33333333333337" width="377" height="45.666666666666629"/>
+                                        <color key="minimumTrackTintColor" red="0.12570948970000001" green="0.15196008959999999" blue="0.91976243260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="maximumTrackTintColor" red="0.68001043949999995" green="0.46799922849999998" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="thumbTintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="controlVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="WCa-HW-fsD"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9529411793" green="0.91372549530000002" blue="0.74509805439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3mg-fQ-4OF" secondAttribute="trailing" constant="10" id="08P-y0-vve"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3mg-fQ-4OF" secondAttribute="bottom" constant="35" id="2wo-bm-8ec"/>
+                            <constraint firstItem="3mg-fQ-4OF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="8s2-eD-UIA"/>
+                            <constraint firstItem="3mg-fQ-4OF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gs5-TF-oR1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderVolume" destination="Gnd-Ug-zo4" id="huJ-sn-8dp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cao" width="108" height="102"/>
+        <image name="gato" width="113" height="102"/>
+        <image name="leao" width="108" height="101"/>
+        <image name="logo" width="263" height="72"/>
+        <image name="macaco" width="108" height="116"/>
+        <image name="ovelha" width="113" height="101"/>
+        <image name="vaca" width="113" height="116"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
